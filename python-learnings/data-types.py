@@ -43,7 +43,7 @@ print(f"Does the college of medicine offer Dentistry as a course, True/False? {T
 
 # Checking Data type of values
 #--------------------------------------------
-# Python comes with a built-in function type that is used to check the data type of any value
+# Python comes with a built-in function "type" that is used to check the data type of any value
 x = 11
 type_of_x = type(x)
 print(type_of_x)
@@ -52,11 +52,11 @@ y = 12.55
 type_of_y = type(y)
 print(type_of_y)
 
-name= "Jess"
+name= "Max"
 type_of_name= type(name)
 print(type_of_name)
 
-yes = name == "Jess"
+yes = name == "Max"
 type_of_yes = type(yes)
 print(type_of_yes)
 
@@ -67,10 +67,3 @@ print(convert_x_to_float) #11.0
 convert_y_to_int= int(y)
 print(convert_y_to_int) #12
 
-# Prompts or Input
-# Python has a way to receive inputs from a user using an input function called input()
-
-first_name = input('Enter your first name: ')
-last_name = input('Enter your last name: ')
-
-print(first_name + " " + last_name)
