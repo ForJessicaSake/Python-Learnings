@@ -102,6 +102,19 @@ print(min_value)
 max_value = max(numbers)
 print(max_value)
 
+# Tuples
+# An  immutable (cannot be changed) and ordered data collection type defined using () close brackets and an equal to sign
+empty_tuple = () #or tuple()
+print(empty_tuple)
+new_tuple = (1, 2, 3, 5, 3, 2, 0, 8)
+print(new_tuple[2])
+print(new_tuple[0])
+# the value or items in a tuple cannot be modified - would result in an error hence tuple are only used to store items,lists are more commonly used
+
+# Tuple methods
+print(new_tuple.count(2))
+print(new_tuple.index(2))
+# index and count are the only tuple methods available.
 
 
 
