@@ -116,5 +116,66 @@ print(new_tuple.count(2))
 print(new_tuple.index(2))
 # index and count are the only tuple methods available.
 
+# Sets
+# An unordered unique data collection type defined using the set keyword and curly braces.
+empty_set = set()
+print(empty_set)
+
+# Empty sets cannot be defined using empty curly braces {} - the dict
+set_of_values ={ 1, 2, 3, 4, 5, 8, 6, 7, "AB", "BA", "AB", "True", "True", "False"}
+print(set_of_values)
+
+list_data = [1,2,3,4,1,2,5,6]
+print(list_data)
+set_data= set(list_data)
+print(set_data)
+print(list(set_data))
+
+# Set Methods
+new_set_data = set_data.copy()
+new_set_data.pop()
+print(new_set_data)
+new_set_data.remove(6)
+print(new_set_data)
+new_set_data.clear()
+print(new_set_data)
+new_set_data.add(7)
+print(new_set_data)
+new_set_data.discard(7)
+print(new_set_data)
+
+# Comparing two sets together
+a= {1,2,3,4,5}
+b={3,4,5}
+c={6,5,7}
+
+print(a.union(c))
+print(a.intersection(b))
+print(a.difference(b))
+print(a.symmetric_difference(b))
+print(a.issubset(b))
+print(a.issuperset(b))
+
+# Dict
+# They are defined using the dict keyword or curly braces. They are key valued pairs, ordered and mapped values.
+dict_example= {"fullName": "John Doe", "age":7}
+print(dict_example["fullName"])
+print(dict_example["age"])
+
+# Dict Methods
+#.items()
+print(dict_example.items())
+#.keys()
+print(dict_example.keys())
+#.values()
+print(dict_example.values())
+#.pop
+print(dict_example.pop("age"))
+print(dict_example)
+
+
+
+
+
 
 
