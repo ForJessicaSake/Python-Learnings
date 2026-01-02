@@ -82,3 +82,21 @@ elif 50 <=score <=69:
     print('C')
 else:
     print('Fail')
+
+color_one = input("Enter a color, red, yellow or blue? ").lower()
+color_two = input("Enter a color, red, yellow or blue. Do not enter the previous color ").lower()
+
+if color_one == "red" and color_two == "yellow" or color_one == "yellow" and color_two == "red":
+    print('orange')
+elif color_one == "blue" and color_two == "yellow" or  color_one == "yellow" and color_two == "blue":
+    print('green')
+elif color_one == "red" and color_two == "blue" or color_one == "blue" and color_two == "red":
+    print('purple')
+elif color_one == "red" and color_two == "red":
+    print('red')
+elif color_one == "yellow" and color_two == "yellow":
+    print('yellow')
+elif color_one == "blue" and color_two == "blue":
+    print('blue')
+else:
+    print('Invalid color combination')
