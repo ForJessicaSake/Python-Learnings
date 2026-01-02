@@ -83,9 +83,9 @@ elif 50 <=score <=69:
 else:
     print('Fail')
 
+# Color game
 color_one = input("Enter a color, red, yellow or blue? ").lower()
 color_two = input("Enter a color, red, yellow or blue. Do not enter the previous color ").lower()
-
 if color_one == "red" and color_two == "yellow" or color_one == "yellow" and color_two == "red":
     print('orange')
 elif color_one == "blue" and color_two == "yellow" or  color_one == "yellow" and color_two == "blue":
@@ -100,3 +100,15 @@ elif color_one == "blue" and color_two == "blue":
     print('blue')
 else:
     print('Invalid color combination')
+
+# Guessing game
+secret_number = 8
+number = int(input('Guess the secret number! Enter a number between 1 and 10'))
+if 1<= number<=5 :
+    print('Too low, guess a number higher ')
+elif 6<= number< secret_number :
+    print('You are close, guess a number higher ')
+elif number == secret_number:
+    print('You guessed right! 8 is the secret number ')
+else:
+    print('Too high, guess a number lower')
