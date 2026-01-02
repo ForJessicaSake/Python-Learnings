@@ -103,12 +103,15 @@ else:
 
 # Guessing game
 secret_number = 8
-number = int(input('Guess the secret number! Enter a number between 1 and 10'))
-if 1<= number<=5 :
-    print('Too low, guess a number higher ')
-elif 6<= number< secret_number :
-    print('You are close, guess a number higher ')
-elif number == secret_number:
-    print('You guessed right! 8 is the secret number ')
-else:
-    print('Too high, guess a number lower')
+for i in range(5):
+    print(f"{i}/5 trials")
+    number = int(input('Guess the secret number! Enter a number between 1 and 10 '))
+    if 1<= number<=5:
+        print('Too low, guess a number higher')
+    elif 6<= number< secret_number:
+        print('You are close, guess a number higher')
+    elif number == secret_number:
+        print('You guessed right! 8 is the secret number')
+        break
+    else:
+        print('Too high, guess a number lower')
